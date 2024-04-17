@@ -42,6 +42,7 @@
   
   .header {
     width: 50%;
+    top: 10vh;
     display: flex;
     justify-content: space-between;
     padding: 2em;
