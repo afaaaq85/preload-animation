@@ -1,13 +1,93 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: 'SlangOutfit';
+    src: url('./assets/fonts/SlangOutfitRegular.ttf') format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  html,
+  body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    background: #fafafa;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: #1a1a1a;
+    justify-content: space-between;
+    padding: 1em;
+  }
+  
+  nav div {
+    display: flex;
+    padding: 1em;
+    gap: 10em;
+  }
+  
+  nav div a {
+    text-decoration: none;
+    color: #fafafa;
+    font-family: "Neue Montreal";
+    cursor: pointer;
+  }
+  
+  .header {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+  }
+  
+  .header .h1 {
+    position: relative;
+    font-family: "GAMERIA";
+    font-size: 10vw;
+    color: #1a1a1a;
+    line-height: 1.125;
+    cursor: pointer;
+  }
+  
+  .overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    padding: none;
+    display: flex;
+    z-index: 2;
+  }
+  
+  .bar {
+    width: 10vw;
+    height: 100vh;
+    background: #1a1a1a;
+    border: 0px;
+    margin: 0;    
+    padding: 0;
+  }
+  
+  .counter {
+    position: fixed;
+    bottom: 0%;
+    right: 0;
+    z-index: 3;
+    color: #bcbcc4;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 20vw;
+    font-family: 'SlangOutfit', sans-serif;
+  }
+  .counter p {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
