@@ -39,10 +39,12 @@
     font-family: "Neue Montreal";
     cursor: pointer;
   }
-  
+  .container-home{
+    height: 100vh;
+  }
   .header {
     width: 50%;
-    top: 10vh;
+    margin-top: -20vh;
     display: flex;
     justify-content: space-between;
     padding: 2em;

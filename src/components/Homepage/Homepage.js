@@ -13,7 +13,7 @@ const Homepage = () => {
   };
 
   return (
-    <div className="container-home">
+    <div className="container-home d-flex align-items-center justify-content-center ">
       <nav className="bg-dark">
         <div className="menu text-light">
           <a href="#about">About</a>
